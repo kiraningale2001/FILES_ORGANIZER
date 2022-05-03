@@ -7,7 +7,7 @@ root=Tk()
 root.geometry("500x500+100+100")
 root.minsize(500,500)
 root.maxsize(500,500)
-root.title("IK File Organizer")
+root.title("File Organizer")
 
 
 def organizer():
@@ -28,10 +28,10 @@ def organizer():
                          shutil.move(path+'/'+file,path+'/'+extension+'/'+file)
                messagebox.showinfo("Done", "seccessfuly organized")        
           except:
-               messagebox.showwarning("Warning", "Plz Enter a Folder vaild path")
+               messagebox.showwarning("Warning", "Enter vaild path")
                
      else:
-          messagebox.showwarning("Warning", "Plz Enter a Folder path!")
+          messagebox.showwarning("Warning", "Enter path!")
           
           
      
@@ -40,11 +40,11 @@ def organizer():
 
      
 
-label_name=Label(root, text="Welcome in IK Files Organizer Software", bg="black" ,fg="white"
+label_name=Label(root, text="Welcome in Files Organizer Software", bg="black" ,fg="white"
                  , font="arial 18 bold").pack(fill=X)
 
 
-label_filepath=Label(root, text="Enter Below Folder path", font="arial 15 bold",).place(x=150,y=50)
+label_filepath=Label(root, text="Enter a folder path", font="arial 15 bold",).place(x=150,y=50)
 
 filepath_en=Entry(root,font="arial 13",fg="red")
 filepath_en.place(x=100,y=100,width=300,height=35)
